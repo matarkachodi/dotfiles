@@ -9,6 +9,11 @@
     ];
     settings = {
       theme = "nord";
+      editor = {
+        bufferline = "multiple";
+        auto-format = false;
+        line-number = "relative";
+      };
     };
   };
 }
