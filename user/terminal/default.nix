@@ -4,5 +4,6 @@
     ./emulators
     ./helix
     ./fish.nix
+    ./starship.nix
   ];
 }
