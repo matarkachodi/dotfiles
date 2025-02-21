@@ -85,6 +85,10 @@
         "$modShift, J, movewindow, d"
         "$modShift, K, movewindow, u"
         "$modShift, L, movewindow, r"
+
+        # Cycle through workspaces with $mod + Comma / Period
+        "$mod, Comma, workspace, e-1"
+        "$mod, Period, workspace, e+1"
       ];
     };
   };
