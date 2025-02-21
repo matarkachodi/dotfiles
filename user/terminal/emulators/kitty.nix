@@ -4,6 +4,7 @@
     enable = true;
     settings = {
       window_padding_width = "5";
+      confirm_os_window_close = 0;
 
       font_size = "10.8";
       bold_font = ''family="SauceCodePro Nerd Font" style=Bold'';
