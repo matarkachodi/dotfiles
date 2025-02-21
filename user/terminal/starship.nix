@@ -12,6 +12,9 @@
         vimcmd_replace_symbol = "[](bold red)";
         vimcmd_replace_one_symbol = "[](bold red)";
       };
+      git_branch = {
+        symbol = " ";
+      };
     };
   };
 }
