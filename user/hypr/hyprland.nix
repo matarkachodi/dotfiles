@@ -24,6 +24,16 @@
         disable_splash_rendering = true;
       };
 
+      # Animations
+      animations = {
+        enabled = true;
+        animation = [
+          "global, 1, 3, default"
+          "windows, 1, 3, default, popin 87%"
+          "workspaces, 0, 3, default"
+        ];
+      };
+
       # Keybinding
       bind = [
         # Launch apps
