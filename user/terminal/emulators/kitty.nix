@@ -3,6 +3,8 @@
   programs.kitty = {
     enable = true;
     settings = {
+      window_padding_width = "5";
+
       font_size = "10.8";
       bold_font = ''family="SauceCodePro Nerd Font" style=Bold'';
       font_family = ''family="SauceCodePro Nerd Font" style=SemiBold'';
