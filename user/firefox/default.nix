@@ -65,6 +65,22 @@
           "toolkit.telemetry.unified" = false;
           "toolkit.telemetry.unifiedIsOptIn" = false;
           "toolkit.telemetry.updatePing.enabled" = false;
+
+          # Layout
+          "browser.uiCustomization.state" = builtins.toJSON {
+            currentVersion = 20;
+            newElementCount = 5;
+            dirtyAreaCache = ["nav-bar" "PersonalToolbar" "toolbar-menubar" "TabsToolbar" "widget-overflow-fixed-list"];
+            placements = {
+              PersonalToolbar = ["personal-bookmarks"];
+              TabsToolbar = ["tabbrowser-tabs" "new-tab-button" "alltabs-button"];
+              nav-bar = ["back-button" "forward-button" "stop-reload-button" "urlbar-container" "downloads-button" "reset-pbm-toolbar-button" "unified-extensions-button"];
+              toolbar-menubar = ["menubar-items"];
+              unified-extensions-area = [];
+              widget-overflow-fixed-list = [];
+            };
+            seen = ["save-to-pocket-button" "developer-button"];
+          };
         };
       };
     };
