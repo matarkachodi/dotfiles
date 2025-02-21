@@ -1,10 +1,19 @@
-{lib, ...}: {
+{
+  inputs,
+  lib,
+  system,
+  ...
+}: {
   # Configure Firefox
   programs.firefox = {
     enable = true;
     profiles = {
       me = {
         isDefault = true;
+        extensions.packages = with inputs.firefox-addons.packages.${system}; [
+          ublock-origin
+          sponsorblock
+        ];
         settings = {
           # Disable irritating first-run stuff
           "browser.disableResetPrompt" = true;
@@ -66,6 +75,9 @@
           "toolkit.telemetry.unifiedIsOptIn" = false;
           "toolkit.telemetry.updatePing.enabled" = false;
 
+          # Automatically enable extensions
+          "extensions.autoDisableScopes" = 0;
+
           # Layout
           "browser.uiCustomization.state" = builtins.toJSON {
             currentVersion = 20;
@@ -79,7 +91,7 @@
               unified-extensions-area = [];
               widget-overflow-fixed-list = [];
             };
-            seen = ["save-to-pocket-button" "developer-button"];
+            seen = ["save-to-pocket-button" "developer-button" "ublock0_raymondhill_net-browser-action" "sponsorblocker_ajay_app-browser-action"];
           };
         };
       };

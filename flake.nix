@@ -13,6 +13,10 @@
       url = "github:cachix/git-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   # Outputs
@@ -21,6 +25,7 @@
     nixpkgs,
     home-manager,
     pre-commit-hooks,
+    firefox-addons,
   } @ inputs: let
     # System architecture
     system = "x86_64-linux";
