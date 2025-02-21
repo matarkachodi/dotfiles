@@ -7,5 +7,8 @@
     ignores = [
       "!.gitignore"
     ];
+    settings = {
+      theme = "nord";
+    };
   };
 }
