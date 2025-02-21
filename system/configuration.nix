@@ -11,6 +11,7 @@
     ./hardware
     ./hyprland
     ./sddm
+    ./android.nix
     ./boot.nix
     ./filesystems.nix
     ./fonts.nix
@@ -32,7 +33,7 @@
   users.users.${user} = {
     shell = pkgs.fish;
     isNormalUser = true;
-    extraGroups = ["networkmanager" "wheel"];
+    extraGroups = ["adbusers" "networkmanager" "wheel"];
   };
 
   # Allow unfree packages
