@@ -16,6 +16,10 @@
         color-modes = true;
         text-width = 100;
         end-of-line-diagnostics = "hint";
+        lsp = {
+          display-inlay-hints = true;
+          display-progress-messages = true;
+        };
       };
     };
   };
