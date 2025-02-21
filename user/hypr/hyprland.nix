@@ -73,6 +73,12 @@
         "$modShift, 4, movetoworkspacesilent, 4"
         "$modShift, 5, movetoworkspacesilent, 5"
         "$modShift, 6, movetoworkspacesilent, 6"
+
+        # Move focus with $mod + H / J / K / L key
+        "$mod, H, movefocus, l"
+        "$mod, J, movefocus, d"
+        "$mod, K, movefocus, u"
+        "$mod, L, movefocus, r"
       ];
     };
   };
