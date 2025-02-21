@@ -14,7 +14,21 @@
 
       # General
       general = {
+        gaps_in = 3;
+        gaps_out = 5;
+
+        border_size = 2;
+        "col.active_border" = "rgb(8fbcbb)";
+        "col.inactive_border" = "rgb(2e3440)";
+
         layout = "dwindle";
+      };
+
+      # Decoration
+      decoration = {
+        rounding = 4;
+        blur.enabled = false;
+        shadow.enabled = false;
       };
 
       # Misc
