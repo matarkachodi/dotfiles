@@ -13,6 +13,7 @@
         extensions.packages = with inputs.firefox-addons.packages.${system}; [
           ublock-origin
           sponsorblock
+          violentmonkey
         ];
         settings = {
           # Disable irritating first-run stuff
@@ -91,7 +92,7 @@
               unified-extensions-area = [];
               widget-overflow-fixed-list = [];
             };
-            seen = ["save-to-pocket-button" "developer-button" "ublock0_raymondhill_net-browser-action" "sponsorblocker_ajay_app-browser-action"];
+            seen = ["save-to-pocket-button" "developer-button" "ublock0_raymondhill_net-browser-action" "sponsorblocker_ajay_app-browser-action" "_aecec67f-0d10-4fa7-b7c7-609a2db280cf_-browser-action"];
           };
         };
       };
