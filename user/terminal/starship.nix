@@ -29,6 +29,10 @@
         untracked = "[ $count](bold yellow) ";
         conflicted = "[ $count](bold red) ";
       };
+      package = {
+        symbol = "󰆧 ";
+        style = "bold blue";
+      };
     };
   };
 }
