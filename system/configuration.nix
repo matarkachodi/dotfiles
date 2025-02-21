@@ -1,5 +1,6 @@
 {
   modulesPath,
+  pkgs,
   user,
   ...
 }: {
@@ -22,8 +23,14 @@
   # Enable experimental features
   nix.settings.experimental-features = ["nix-command" "flakes"];
 
+  # Configure Fish
+  programs.fish = {
+    enable = true;
+  };
+
   # Define user account
   users.users.${user} = {
+    shell = pkgs.fish;
     isNormalUser = true;
     extraGroups = ["networkmanager" "wheel"];
   };
