@@ -12,6 +12,7 @@
     ./sddm
     ./boot.nix
     ./filesystems.nix
+    ./fonts.nix
     ./localization.nix
     ./networking.nix
     ./rtkit.nix
