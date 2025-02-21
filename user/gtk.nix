@@ -14,5 +14,10 @@
       name = "Papirus-Dark";
       package = pkgs.papirus-nord;
     };
+    cursorTheme = {
+      size = 14;
+      name = "Bibata-Modern-Classic";
+      package = pkgs.bibata-cursors;
+    };
   };
 }
