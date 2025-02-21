@@ -79,6 +79,12 @@
         "$mod, J, movefocus, d"
         "$mod, K, movefocus, u"
         "$mod, L, movefocus, r"
+
+        # Move active window with $modShift + H / J / K / L key
+        "$modShift, H, movewindow, l"
+        "$modShift, J, movewindow, d"
+        "$modShift, K, movewindow, u"
+        "$modShift, L, movewindow, r"
       ];
     };
   };
