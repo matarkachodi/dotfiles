@@ -4,6 +4,7 @@
     enable = true;
     enableFishIntegration = true;
     settings = {
+      format = "$directory$git_branch$git_status$package$nix_shell\n$character";
       character = {
         error_symbol = "[](bold red)";
         success_symbol = "[](bold green)";
