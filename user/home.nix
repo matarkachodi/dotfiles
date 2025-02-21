@@ -4,6 +4,7 @@
     ./firefox
     ./hypr
     ./terminal
+    ./eza.nix
     ./gammastep.nix
     ./git.nix
     ./ssh.nix
