@@ -20,6 +20,10 @@
           display-inlay-hints = true;
           display-progress-messages = true;
         };
+        indent-guides = {
+          render = true;
+          character = "▏";
+        };
       };
     };
   };
