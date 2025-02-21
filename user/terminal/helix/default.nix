@@ -13,6 +13,9 @@
         bufferline = "multiple";
         auto-format = false;
         line-number = "relative";
+        color-modes = true;
+        text-width = 100;
+        end-of-line-diagnostics = "hint";
       };
     };
   };
